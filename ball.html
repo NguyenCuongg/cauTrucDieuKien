@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <img id="myImage"
+            src="https://us.123rf.com/450wm/alekss/alekss1812/alekss181200029/113320366-soccer-ball-isolated-on-white-background.jpg?ver=6"
+            style="width:330px; left: 0px;">
+        <p>click button below to move the image to right</p>
+        <input type="button" value="click Me" onclick="moveright() "></input>
+    </form>
+    <script>
+        let imgobj = null;
+        imgobj = document.getElementById('myImage');
+        function init() {
+            imgobj = document.getElementById('myImage');
+            imgobj.style.position = 'relative';
+            imgobj.style.left = 'Opx';
+        }
+        function moveright() {
+            console.log(parseInt(imgobj.style.left) + 10 + 'px');
+            imgobj.style.left = parseInt(imgobj.style.left) + 10 + 'px';
+        }
+        window.onload = init();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let doanhthu = parseInt(prompt("nhap vao doanh thu thang nay: ", ''));
+        let hoahong = '';
+        if (doanhthu > 1000000) {
+            hoahong = (doanhthu * 5) / 100
+            alert(hoahong)
+        }
+        else if (doanhthu > 100000) {
+            hoahong = (doanhthu * 3) / 100
+            alert(hoahong)
+        }
+        else alert('k co');
+    </script>
+</body>
+
+</html>

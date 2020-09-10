@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let diemkt = parseInt(prompt("nhap vao diem bai kiem tra: ", ''));
+        let diemgiua = parseInt(prompt("nhap vao diem bai giua ki: ", ''));
+        let diemcuoi = parseInt(prompt("nhap vao diem bai cuoi ki: ", ''));
+        let tbm = '';
+        tbm = (diemkt + (diemgiua * 2) + (diemcuoi * 3)) / 6;
+        if (tbm >= 8) {
+            alert('gioi')
+        }
+        else if (tbm >= 6.5) {
+            alert('kha')
+        }
+        else if (tbm >= 5.0) {
+            alert('tb')
+        }
+        else alert('yeu');
+    </script>
+</body>
+
+</html>

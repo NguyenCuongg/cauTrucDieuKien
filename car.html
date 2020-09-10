@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload="batdau()">
+    <img id="nobita" src="/anh/car.jpg" style="position:absolute;left:0; top:0;" height="100" width="80" />
+    <script>
+        function sangphai() {
+            var element = document.getElementById("nobita");
+            element.style.left = parseInt(element.style.left) + 5 + 'px';
+
+        }
+        function dichuyen(evt) {
+            switch (evt.keyCode) {
+                case 39:
+                    sangphai();
+                    break;
+            }
+        }
+        function batdau() {
+            window.addEventListener('keydown', dichuyen);
+        }
+
+    </script>
+</body>
+
+</script>
+
+</html>
